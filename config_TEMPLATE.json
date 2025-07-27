@@ -1,0 +1,9 @@
+{
+  "telegram_bot1_token": "",
+  "telegram_bot2_token": "",
+  "cardtrader_token":    "",
+  "top_n":               5,
+  "chat_id":             "",
+  "send_telegram":       true,
+  "debug":               false
+}
