@@ -1,0 +1,14 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all
+exec_prefix=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all
+libdir=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all/lib
+includedir=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.4.17
+Requires:
+Requires.private: zlib, harfbuzz >= 1.8.0
+Libs: -L${libdir} -lfreetype
+Libs.private: -lpng16 -lz
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,14 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all
+exec_prefix=${prefix}
+libdir=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all/bin
+includedir=${prefix}/include
+
+Name: vips
+Description: Image processing library
+Version: 8.11.2
+Requires.private:  glib-2.0 gmodule-no-export-2.0 gobject-2.0 gio-2.0 expat libgsf-1 fftw3 orc-0.4 lcms2 OpenEXR libopenjp2 libheif librsvg-2.0 cairo zlib matio cfitsio libwebp libwebpmux libwebpdemux pangocairo fontconfig libtiff-4 spng libpng imagequant libjpeg libexif
+Requires: gobject-2.0
+Libs: -L${libdir} -lvips 
+Libs.private: 
+Cflags: -I${includedir}
+

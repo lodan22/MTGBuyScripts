@@ -1,0 +1,10 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all
+exec_prefix=${prefix}
+libdir=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.all/bin
+includedir=${prefix}/include
+
+Name: vips-cpp
+Description: C++ API for vips8 image processing library
+Version: 8.11.2
+Requires: vips gobject-2.0
+Libs: -L${libdir} -lvips-cpp
